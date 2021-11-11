@@ -9,7 +9,7 @@ const Result = () => {
           <span>Tip Amount</span>
           <span>/ person</span>
         </div>
-        <div>
+        <div className={styles.value}>
           <span>$45</span>
         </div>
       </div>
@@ -18,7 +18,7 @@ const Result = () => {
           <span>Total</span>
           <span>/ person</span>
         </div>
-        <div>
+        <div className={styles.value}>
           <span>$45</span>
         </div>
       </div>

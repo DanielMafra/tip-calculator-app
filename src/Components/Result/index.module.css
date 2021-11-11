@@ -1,5 +1,5 @@
 .result {
-  margin-top: 32px;
+  margin: 32px 0;
   width: 100%;
   padding: 32px 16px;
   border-radius: 16px;
@@ -15,4 +15,37 @@
 
 .labelResult > span {
   display: block;
+}
+
+.labelResult > span:first-of-type{
+  color: var(--white);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.labelResult > span:last-of-type{
+  color: var(--dark-grayish-cyan-b);
+}
+
+.value > span {
+  color: var(--strong-cyan);
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.result > button {
+  background-color: var(--strong-cyan);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 12px;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.result > button:hover {
+  background-color: #9fe8df;
 }
