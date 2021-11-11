@@ -1,0 +1,40 @@
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input > label {
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--dark-grayish-cyan-a);
+}
+
+.input > input {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: end;
+  padding-right: 8px;
+  position: relative;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--light-grayish-cyan-b) !important;
+  color: var(--very-dark-cyan);
+}
+
+.input > input:hover,
+.input > input:focus{
+  outline: none;
+  border: 1.5px solid var(--strong-cyan);
+}
+
+.input > input::placeholder{
+  color: var(--dark-grayish-cyan-b);
+}
+
+.iconBill > input {
+  background: url("../../assets/icon-dollar.svg") no-repeat 7px;
+}
+
+.iconPerson > input {
+  background: url("../../assets/icon-person.svg") no-repeat 7px;
+}
