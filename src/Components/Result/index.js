@@ -3,7 +3,7 @@ import { GlobalContext } from '../../Contexts/GlobalContext';
 import styles from './index.module.css';
 
 const Result = () => {
-  const { amount, total } = useContext(GlobalContext);
+  const { amount, total, bill, tip, people, reset } = useContext(GlobalContext);
 
   return (
     <div className={styles.result}>
@@ -13,7 +13,7 @@ const Result = () => {
           <span>/ person</span>
         </div>
         <div className={styles.value}>
-          <span>${amount}</span>
+          <span>${bill > 0 && tip > 0 && people > 0 ? amount.toFixed(2) : "0.00"}</span>
         </div>
       </div>
       <div className={styles.label}>
@@ -22,10 +22,10 @@ const Result = () => {
           <span>/ person</span>
         </div>
         <div className={styles.value}>
-          <span>${total}</span>
+          <span>${bill > 0 && tip > 0 && people > 0 ? total.toFixed(2) : "0.00"}</span>
         </div>
       </div>
-      <button>Reset</button>
+      <button onClick={reset}>Reset</button>
     </div>
   )
 }
