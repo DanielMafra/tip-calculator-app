@@ -1,0 +1,53 @@
+.tips {
+  margin: 32px 0;
+}
+
+.tips > label {
+  font-weight: 700;
+  color: var(--dark-grayish-cyan-a);
+}
+
+.percents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+}
+
+.percents > button {
+  margin-top: 8px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white);
+  background-color: var(--very-dark-cyan);
+  border: none;
+  border-radius: 8px;
+  transition: .3s;
+}
+
+.percents > button:hover{
+  background-color: var(--strong-cyan);
+}
+
+.percents > input {
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: end;
+  padding-right: 8px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--light-grayish-cyan-b) !important;
+  color: var(--very-dark-cyan);
+}
+
+.percents > input:hover,
+.percents > input:focus{
+  outline: none;
+  border: 1.5px solid var(--strong-cyan);
+}
+
+.percents > input::placeholder{
+  color: var(--dark-grayish-cyan-b);
+}
