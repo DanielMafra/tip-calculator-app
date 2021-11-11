@@ -1,0 +1,11 @@
+body {
+  background-color: var(--light-grayish-cyan-a);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 32px;
+}
+
+.home > img {
+  margin-bottom: 32px;
+}
