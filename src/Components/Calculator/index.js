@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './index.module.css';
 import Input from '../Input/index';
 import Tip from '../Tip/index';
+import Result from '../Result/index';
 
 const Calculator = () => {
   return (
@@ -11,6 +12,7 @@ const Calculator = () => {
         <Tip />
         <Input label="Number of People" icon="iconPerson" />
       </form>
+      <Result />
     </div>
   )
 }
