@@ -62,3 +62,9 @@
   border: 1.5px solid var(--strong-cyan) !important;
   color: var(--very-dark-cyan) !important;
 }
+
+@media (min-width: 900px){
+  .percents > button {
+    cursor: pointer;
+  }
+}

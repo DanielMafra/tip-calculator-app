@@ -53,3 +53,20 @@
 .result > button:disabled{
   opacity: 0.2;
 }
+
+.result > button:hover:disabled{
+  background-color: var(--strong-cyan);
+  cursor: default;
+}
+
+@media (min-width: 900px){
+  .result {
+    max-width: 360px;
+    margin: 32px 0 32px 48px;
+  }
+
+  .result > button {
+    margin-top: 82px;
+    cursor: pointer;
+  }
+}
