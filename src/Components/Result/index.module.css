@@ -35,7 +35,7 @@
 
 .result > button {
   background-color: var(--strong-cyan);
-  color: var(--white);
+  color: var(--very-dark-cyan);
   border-radius: 8px;
   padding: 12px;
   border: none;
@@ -48,4 +48,8 @@
 
 .result > button:hover {
   background-color: #9fe8df;
+}
+
+.result > button:disabled{
+  opacity: 0.2;
 }
